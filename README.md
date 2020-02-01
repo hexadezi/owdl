@@ -13,7 +13,7 @@ Usage
 Just download and start the file.
 
 ## Download
-Download here:
+Download here: [https://github.com/labo89/owdl/releases]
 
 ## Acknowledgments
 aequabit for OwSniff which I used as a base
