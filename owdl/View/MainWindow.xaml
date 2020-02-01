@@ -1,0 +1,28 @@
+﻿<Window x:Class="owdl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:owdl"
+        mc:Ignorable="d"
+        Title="CS:GO - Overwatch Downloader" Height="300" Width="527"
+        Closing="Window_Closing"
+        ContentRendered="Window_ContentRendered" WindowStartupLocation="CenterScreen">
+    <Grid Margin="5">
+        <ListBox Name="itemsControl" FontFamily="Consolas" ItemsSource="{Binding Lines}" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                 ScrollViewer.VerticalScrollBarVisibility="Visible">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="Margin" Value="0,0,1,1"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+
+</Window>
