@@ -9,11 +9,11 @@ It will automatically download and extract the file.
 What things you need to run the sofware?
 
 .NET Framework 4.6.1
-Usage
+### Usage
 Just download and start the file.
 
 ## Download
-Download here: [https://github.com/labo89/owdl/releases]
+Download here: https://github.com/labo89/owdl/releases
 
 ## Acknowledgments
 aequabit for OwSniff which I used as a base
