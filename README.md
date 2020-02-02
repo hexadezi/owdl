@@ -20,6 +20,7 @@ The file will be downloaded to temp directory and extracted to desktop.
 Download here: https://github.com/labo89/owdl/releases
 
 ## Dependencies
+The following dependencies are included in the exe.
 [System.Runtime.CompilerServices.Unsafe](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Runtime.CompilerServices.Unsafe)
 
 [Packet.Net](https://github.com/chmorgan/packetnet)
