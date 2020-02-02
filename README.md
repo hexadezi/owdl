@@ -5,6 +5,9 @@ This tool sniffs the http packages to get the link for the original overwatch re
 
 It will automatically download and extract the file.
 
+## Screenshot
+![](https://github.com/labo89/owdl/blob/master/screenshots/screenshot1.png?raw=true "")
+
 ## Prerequisites
 What things you need to run the sofware?
 
