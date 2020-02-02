@@ -22,4 +22,4 @@ Download here: https://github.com/labo89/owdl/releases
 aequabit for OwSniff which I used as a base
 
 ## License
-This project is licensed under the GNU GENERAL PUBLIC LICENSE 3.0 - see the LICENSE file for details
+This project is licensed under the MIT License - see the LICENSE file for details
