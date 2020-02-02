@@ -17,7 +17,6 @@ namespace owdl.ViewModel
     class MainWindowViewModel : ViewModelBase
     {
         public ObservableCollection<string> Lines { get; } = new ObservableCollection<string>();
-
         readonly Sniffer sniffer = new Sniffer();
         public RelayCommand InitializeAndStartSniffer { get; private set; }
         public RelayCommand StartSniffer { get; private set; }

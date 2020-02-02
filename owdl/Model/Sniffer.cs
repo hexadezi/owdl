@@ -95,6 +95,7 @@ namespace owdl.Model
                     /* Log response to the console */
                     AddToLog("Sniffed HTTP request to a Valve replay server.");
                     AddToLog("http://" + domain + file);
+                    Debug.WriteLine("http://" + domain + file);
 
                     /* Declare variables to store the filename to be used used on the local filesystem and it's full path */
                     string localFileName = file.Replace("/730/", "");

@@ -54,5 +54,22 @@ namespace owdl
             DataContext = viewModel;
             viewModel.InitializeAndStartSniffer.Execute(null);
         }
+
+        private void ItemsControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show(sender.ToString());
+        }
+
+        private void ListBoxItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var lbi = (ListBoxItem)sender;
+
+            bool result = Uri.TryCreate(lbi.Content.ToString(), UriKind.Absolute, out Uri uriResult)
+                && (uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps);
+            if (result)
+            {
+                System.Diagnostics.Process.Start(lbi.Content.ToString());
+            }
+        }
     }
 }
