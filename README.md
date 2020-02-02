@@ -28,7 +28,7 @@ Download here: https://github.com/labo89/owdl/releases
 [SharpZipLib](https://github.com/icsharpcode/SharpZipLib)
 
 ## Acknowledgments
-aequabit for OwSniff which I used as a base
+[aequabit for OwSniff, which I used as a base](https://github.com/aequabit/OwSniff)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
