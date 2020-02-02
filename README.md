@@ -9,11 +9,12 @@ It will automatically download and extract the file.
 ![](https://github.com/labo89/owdl/blob/master/screenshots/screenshot1.png?raw=true "")
 
 ## Prerequisites
-What things you need to run the sofware?
-
 .NET Framework 4.6.1
+
 ## Usage
-Just download and start the file.
+Download and start the file. Then go to csgo and download the evidence. 
+
+The file will be downloaded to temp directory and extracted to desktop.
 
 ## Download
 Download here: https://github.com/labo89/owdl/releases
