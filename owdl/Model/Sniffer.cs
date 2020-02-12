@@ -30,7 +30,7 @@ namespace owdl.Model
                 networkInterfaces = SharpPcap.CaptureDeviceList.Instance;
                 if (networkInterfaces.Count < 1)
                 {
-                    MessageBox.Show("There are no network devices available. Exiting...", "No network devices", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("There are no network devices available. This can also happen if the application does not have enough rights. Try and run as administrator. Exiting...", "No network devices", MessageBoxButton.OK, MessageBoxImage.Information);
                     Environment.Exit(0);
                 }
             }
