@@ -25,13 +25,22 @@ namespace owdl.Model
         {
             AddToLog("Start capture on all devices");
 
-            networkInterfaces = SharpPcap.CaptureDeviceList.Instance;
+            try
+            {
+                networkInterfaces = SharpPcap.CaptureDeviceList.Instance;
+                if (networkInterfaces.Count < 1)
+                {
+                    MessageBox.Show("There are no network devices available. Exiting...", "No network devices", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Environment.Exit(0);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ex.Source, MessageBoxButton.OK, MessageBoxImage.Error);
+                Environment.Exit(1);
+            }
 
             /* If no network interfaces are available */
-            if (networkInterfaces.Count < 1)
-            {
-                MessageBox.Show("There are no network devices available. Exiting...", "No network devices", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
 
             Parallel.ForEach(networkInterfaces, (networkInterface) =>
             {
