@@ -9,7 +9,9 @@ It will automatically download and extract the file.
 ![](https://github.com/labo89/owdl/blob/master/screenshots/screenshot1.png?raw=true "")
 
 ## Prerequisites
-.NET Framework 4.6.1
+[.NET Framework 4.6.1](https://www.microsoft.com/de-de/download/details.aspx?id=49982)
+
+[WinPcap](https://www.winpcap.org/install/default.htm)
 
 ## Usage
 Download and start the file. Then go to csgo and download the evidence. 
