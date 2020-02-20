@@ -30,11 +30,19 @@ namespace owdl.ViewModel
         }
         private void Sniffer_OnLineAddition(object sender, string e)
         {
-            //Application.Current.Dispatcher.Invoke(() => { Lines.Add(e); });
-            Application.Current.Dispatcher.BeginInvoke((Action)(() =>
+            if (!Application.Current.Dispatcher.CheckAccess())
+            {
+                //Application.Current.Dispatcher.Invoke(() => { Lines.Add(e); });
+                Application.Current.Dispatcher.BeginInvoke((Action)(() =>
+                {
+                    Lines.Add(e);
+                }));
+            }
+            else
             {
                 Lines.Add(e);
-            }));
+            }
+
         }
     }
 }
