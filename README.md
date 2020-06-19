@@ -11,7 +11,7 @@ It will automatically download and extract the file.
 ## Prerequisites
 [.NET Framework 4.6.1](https://www.microsoft.com/de-de/download/details.aspx?id=49982)
 
-[WinPcap](https://www.winpcap.org/install/default.htm)
+[Npcap](https://nmap.org/download.html)
 
 ## Usage
 Download and start the file. Then go to csgo and download the evidence. 
