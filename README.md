@@ -6,7 +6,7 @@ This tool sniffs the http packages to get the link for the original overwatch re
 It will automatically download and extract the file.
 
 ## Screenshot
-![](https://github.com/labo89/owdl/blob/master/screenshots/screenshot1.png?raw=true "")
+![](https://github.com/hexadezi/owdl/blob/master/screenshots/screenshot1.png?raw=true "")
 
 ## Prerequisites
 [.NET Framework 4.6.1](https://www.microsoft.com/de-de/download/details.aspx?id=49982)
@@ -19,7 +19,7 @@ Download and start the file. Then go to csgo and download the evidence.
 The file will be downloaded to temp directory and extracted to desktop.
 
 ## Download
-Download here: https://github.com/labo89/owdl/releases
+Download here: https://github.com/hexadezi/owdl/releases
 
 ## Dependencies
 The following dependencies are included in the executable.
